@@ -1,17 +1,30 @@
+import { useState } from "react"
 import ButtonSection from "./components/ButtonSection/ButtonSection"
 import Header from "./components/Header/Header"
-import Table from "./components/Table/Table"
 
 function App() {
-  return (
-    <>
-      <Header />
-      <body>
-        <ButtonSection />
+  const [tab, setTab] = useState('sellers')
 
-        <Table />
-      </body>
-    </>
+  return (
+    <div>
+      <Header />
+      <main>
+        <ButtonSection active={tab} onChange={(current) => setTab(current)}/>
+
+        {tab == 'buyers' && (
+          <>
+            <p>Здесь покупают</p>
+            {/* <TableBuy /> */}
+          </>
+        )}
+        {tab == 'sellers' && (
+          <>
+            <p>Здесь продают</p>
+            {/* <TableSell /> */}
+          </>
+        )}
+      </main>
+    </div>
   )
 }
 

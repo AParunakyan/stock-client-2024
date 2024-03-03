@@ -23,6 +23,8 @@ header {
 main {
   max-width: 850px;
   margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   padding-top: 2rem;
 }

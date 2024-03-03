@@ -1,5 +1,5 @@
 
-export default function Table() {
+export default function TableSell() {
     <section>
         
     </section>

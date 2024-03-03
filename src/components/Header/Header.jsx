@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-
 export default function Header () {
     const [time, setTime] = useState(new Date())
 
