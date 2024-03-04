@@ -1,6 +1,8 @@
 import { useState } from "react"
 import ButtonSection from "./components/ButtonSection/ButtonSection"
 import Header from "./components/Header/Header"
+import TableBuy from "./components/Table/components/TableBuy"
+import TableSale from "./components/Table/components/TableSale"
 
 function App() {
   const [tab, setTab] = useState('sellers')
@@ -14,13 +16,13 @@ function App() {
         {tab == 'buyers' && (
           <>
             <p>Здесь покупают</p>
-            {/* <TableBuy /> */}
+            <TableBuy />
           </>
         )}
         {tab == 'sellers' && (
           <>
             <p>Здесь продают</p>
-            {/* <TableSell /> */}
+            <TableSale />
           </>
         )}
       </main>
