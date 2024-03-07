@@ -1,8 +1,11 @@
-# React + Vite
+ПО представляет собой web приложение, которое умеет подключаться к серверу по протоколу websocket и взаимодействовать с его API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Интерфейс приложения состоит из тикера и списка заявок:
+    Тикер - виджет, представленный модальным окном, осуществляющий функцию создания заявок на покупку/продажу активов.
+    Список заявок - таблица, в которой содержится информация по всем заявкам. Данные находятся на отдельном сервере. Проверка работы с API реализована с помощью mock-сервера, созданного с помощью приложения Postman.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Работа с приложением:
+1. При открытии сайта, сверху таблицы находится зеленая кнопка "+". Необходимо на нее нажать.
+2. Открывается модальное окно, являющееся тикером. Необходимо выбрать инструмент, ввести объем заявки
+3. Внизу тикера есть две кнопки: продажа данного объема по актуальной цене или его покупка. Необходимо выбрать желаемый вариант.
+4. Готово!

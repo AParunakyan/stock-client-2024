@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DataTable from './tableComponents/reqTable';
+import DataTable from './reqTable';
 
 function JsonFetcher ({ url }) {
   const [data, setData] = useState(null);
