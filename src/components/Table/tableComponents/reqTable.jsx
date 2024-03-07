@@ -1,10 +1,5 @@
 import React, { useEffect, useMemo} from 'react'
-import { useTable } from 'react-table'
-import MOCK_DATA from '../constants/MOCK_DATA'
-import {COLUMNS} from '../constants/Columns'
 import './table.css'
-import Ticker from '../constants/Ticker/Ticker'
-import { useState } from 'react'
 
 
 export default function DataTable ({ data }) {
