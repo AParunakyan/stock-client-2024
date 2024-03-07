@@ -21,12 +21,13 @@ header {
 }
 
 main {
-  max-width: 850px;
+  max-width: 1000px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   padding-top: 2rem;
+  white-space: 'nowrap';
 }
 
 h3 {
