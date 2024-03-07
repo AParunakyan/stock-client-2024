@@ -5,13 +5,15 @@
     cursor: pointer;
     transition: all 0.3s;
     font-weight: bold;
-    margin-right: 1rem;
     margin-bottom: 1rem;
+    margin-left: auto;
     font-size: large;
-    justify-content: flex-end;
-}
-
-.button.active {
     background: olivedrab;
     color: #fff;
+}
+
+.button.close {
+    background: white;
+    margin:0px;
+    color:dimgrey
 }
